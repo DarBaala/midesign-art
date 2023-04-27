@@ -11,4 +11,39 @@
       margin-bottom: 50px;
     }
   }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__card {
+    background-image: url("/img/card-whom.svg");
+    background-repeat: no-repeat;
+    width: 560px;
+    height: 180px;
+    margin-bottom: 25px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &-wrapper {
+      padding: 20px 30px;
+      h3 {
+        font-family: "Heebo", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 38px;
+        color: #ffffff;
+        margin-bottom: 12px;
+      }
+      p {
+        font-family: "Heebo", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 130%;
+        color: #ffffff;
+      }
+    }
+  }
 }
