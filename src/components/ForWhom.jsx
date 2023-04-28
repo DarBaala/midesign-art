@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import flower from "../assets/img/flower-fw-1.svg";
 import girl from "../assets/img/vector-girl.svg";
 
 const ForWhom = () => {
@@ -14,6 +15,13 @@ const ForWhom = () => {
             alt="girl"
             width={453}
             height={453}
+          />
+           <Image
+            className="for-whom__flower"
+            src={flower}
+            alt="flower"
+            width={204}
+            height={341}
           />
           <div className="for-whom__items">
             <div className="for-whom__card">
