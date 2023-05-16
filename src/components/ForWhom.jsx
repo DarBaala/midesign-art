@@ -16,7 +16,7 @@ const ForWhom = () => {
             width={453}
             height={453}
           />
-           <Image
+          <Image
             className="for-whom__flower"
             src={flower}
             alt="flower"
@@ -26,33 +26,33 @@ const ForWhom = () => {
           <div className="for-whom__items">
             <div className="for-whom__card">
               <div className="for-whom__card-wrapper">
-                <h3>Lorem, ipsum dolor.</h3>
+                <h3>Для предпринимателей</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Voluptatibus fugiat eos, magni commodi quaerat maiores saepe,
-                  impedit facilis necessitatibus iure, totam nisi mollitia natus
-                  doloribus illo sapiente voluptatem ab provident!
+                  Идеально подходит для тех, кто ведет коммерческую деятельность
+                  в социальных сетей. Раскроете потенциал вашего смартфона и
+                  научиться использовать различные инструменты и эффекты
+                  редактирования.
                 </p>
               </div>
             </div>
             <div className="for-whom__card">
               <div className="for-whom__card-wrapper">
-                <h3>Lorem, ipsum dolor.</h3>
+                <h3>Для блогеров и маркетологов</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nihil, excepturi aliquam iure nobis itaque a consectetur rem
-                  repellendus iste, aspernatur aperiam esse. Nihil, facere eius.
+                  Рекомендуется для блогеров и маркетологов. Начнете создавать
+                  профессиональный и креативный контент для продвижения.
+                  Повысите свою эффективность и эффективность своего контента.
                 </p>
               </div>
             </div>
             <div className="for-whom__card">
               <div className="for-whom__card-wrapper">
-                <h3>Lorem, ipsum dolor.</h3>
+                <h3>Для творческих людей</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Fugiat quam non at alias animi repellendus asperiores
-                  consequatur impedit cum, quae, dicta aspernatur voluptatibus,
-                  architecto maxime quod eaque illum vel? Cum!
+                  Если занимаетесь самовыражением через визуальные средства,
+                  также найдете пользу в этом курсе, он предоставляет не только
+                  практические навыки редактирования, но и вдохновение и
+                  творческие идеи
                 </p>
               </div>
             </div>
@@ -64,3 +64,5 @@ const ForWhom = () => {
 };
 
 export default ForWhom;
+
+// напиши тетрис на js

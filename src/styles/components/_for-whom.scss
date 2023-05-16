@@ -16,6 +16,7 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
+    margin-bottom: 80px;
   }
   &__flower {
     position: absolute;
@@ -28,6 +29,10 @@
     width: 560px;
     height: 180px;
     margin-bottom: 25px;
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+      transform: translateX(-3%);
+    }
     &:last-child {
       margin-bottom: 0;
     }
