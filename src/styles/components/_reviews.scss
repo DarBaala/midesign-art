@@ -1,0 +1,57 @@
+.reviews {
+  h2 {
+    font-family: "Heebo", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 130%;
+    text-align: center;
+    color: #852e3b;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      margin-left: 10px;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 280px;
+    img {
+      object-fit: contain;
+    }
+  }
+
+  &__bullet {
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+    border-radius: 10px;
+    background-color: rgba(133, 46, 59, 0.2);
+    margin-right: 7px;
+  }
+  &__bullet-active {
+    background-color: #852e3b;
+  }
+  &__bullet:hover {
+    transform: scale(1.5);
+    background-color: rgba(143, 15, 34, 0.986);
+    transition: 0.35s ease-in-out;
+  }
+  &__bullet-active:hover {
+    transform: none;
+    background-color: #852e3b;
+  }
+  .swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}

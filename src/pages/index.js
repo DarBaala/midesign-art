@@ -4,6 +4,7 @@ import Banner from "@/components/Banner";
 import Skills from "@/components/Skills";
 import ForWhom from "@/components/ForWhom";
 import CallReques from "@/components/CallReques";
+import Reviews from "@/components/Reviews";
 
 export default function Home() {
   return (
@@ -22,7 +23,9 @@ export default function Home() {
       <Banner />
       <Skills />
       <ForWhom />
-      <CallReques />
+      <Reviews />
+      {/* <CallReques /> */}
+
       <div style={{ height: "1000px" }}></div>
     </>
   );

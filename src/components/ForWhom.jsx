@@ -7,7 +7,7 @@ const ForWhom = () => {
   return (
     <div className="for-whom">
       <div className="for-whom__wrapper container">
-        <h2>Для кого этот курс?</h2>
+        <h2>Кому будет полезен курс</h2>
         <div className="for-whom__bottom">
           <Image
             className="for-whom__girl"
@@ -26,7 +26,7 @@ const ForWhom = () => {
           <div className="for-whom__items">
             <div className="for-whom__card">
               <div className="for-whom__card-wrapper">
-                <h3>Для предпринимателей</h3>
+                <h3>Предпринимателям</h3>
                 <p>
                   Идеально подходит для тех, кто ведет коммерческую деятельность
                   в социальных сетей. Раскроете потенциал вашего смартфона и
@@ -37,7 +37,7 @@ const ForWhom = () => {
             </div>
             <div className="for-whom__card">
               <div className="for-whom__card-wrapper">
-                <h3>Для блогеров и маркетологов</h3>
+                <h3>Блогерам и маркетологам</h3>
                 <p>
                   Рекомендуется для блогеров и маркетологов. Начнете создавать
                   профессиональный и креативный контент для продвижения.
@@ -47,7 +47,7 @@ const ForWhom = () => {
             </div>
             <div className="for-whom__card">
               <div className="for-whom__card-wrapper">
-                <h3>Для творческих людей</h3>
+                <h3>Творческим людям</h3>
                 <p>
                   Если занимаетесь самовыражением через визуальные средства,
                   также найдете пользу в этом курсе, он предоставляет не только

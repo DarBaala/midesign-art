@@ -9,7 +9,10 @@ const Banner = () => {
             пресеты, лайфхаки по сохранению качества фотографий и видео в
             социальных сетях, оформление фотографий Вашего товара
           </p>
-          <button>Узнать подробнее</button>
+          <div className="banner__buttons">
+            <button className="banner__buttons-buy">Купить</button>
+            <button className="banner__buttons-materials">Материалы курса</button>
+          </div>
         </div>
       </div>
     </div>

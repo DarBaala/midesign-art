@@ -7,7 +7,7 @@ const Skills = () => {
   return (
     <div className="skills">
       <div className="skills__wrapper container">
-        <h2>Что будете уметь после курса?</h2>
+        <h2>Чему вы научитесь на курсе</h2>
         <div className="skills__items">
           <div className="skills__card skills__card-1">
             <div className="skills__block">
