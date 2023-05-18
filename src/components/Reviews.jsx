@@ -20,122 +20,128 @@ import review_8 from "../assets/img/reviews-8.png";
 import review_9 from "../assets/img/reviews-9.png";
 
 export default function Reviews() {
-  console.log(Zoom);
+  const openLink = (e) => {
+    console.log(e);
+    console.log(e.target.currentSrc);
+  };
+
   return (
-    <div className="reviews container">
-      <h2>
-        Отзывы
-        <Image src={heart} alt="heart" width={35} />
-      </h2>
-      <div className="reviews__wrapper">
-        <Swiper
-          zoom={true}
-          modules={[Zoom, Pagination, EffectFade, Autoplay]}
-          slidesPerView={2}
-          spaceBetween={40}
-          autoplay={{
-            delay: 5000,
-            disableOnInteraction: false,
-          }}
-          effect="Cube"
-          pagination={{
-            clickable: true,
-            bulletClass: "reviews__bullet",
-            bulletActiveClass: "reviews__bullet-active",
-          }}
-        >
-          <SwiperSlide>
-            <div className="reviews__item">
-              <Image
-                className="reviews__img"
-                src={review}
-                alt="review"
-                width={400}
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="reviews__item">
-              <Image
-                className="reviews__img"
-                src={review_2}
-                alt="review"
-                width={400}
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="reviews__item">
-              <Image
-                className="reviews__img"
-                src={review_3}
-                alt="review"
-                width={400}
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="reviews__item">
-              <Image
-                className="reviews__img"
-                src={review_4}
-                alt="review"
-                width={400}
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="reviews__item">
-              <Image
-                className="reviews__img"
-                src={review_5}
-                alt="review"
-                width={400}
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="reviews__item">
-              <Image
-                className="reviews__img"
-                src={review_6}
-                alt="review"
-                width={400}
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="reviews__item">
-              <Image
-                className="reviews__img"
-                src={review_7}
-                alt="review"
-                width={400}
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="reviews__item">
-              <Image
-                className="reviews__img"
-                src={review_8}
-                alt="review"
-                width={400}
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="reviews__item">
-              <Image
-                className="reviews__img"
-                src={review_9}
-                alt="review"
-                width={400}
-              />
-            </div>
-          </SwiperSlide>
-        </Swiper>
+    <>
+    <div className="reviews__modal"></div>
+      <div className="reviews container">
+        <h2>
+          Отзывы
+          <Image src={heart} alt="heart" width={35} />
+        </h2>
+        <div className="reviews__wrapper">
+          <Swiper
+            zoom={true}
+            modules={[Zoom, Pagination, EffectFade, Autoplay]}
+            slidesPerView={2}
+            spaceBetween={20}
+            effect="Cube"
+            pagination={{
+              clickable: true,
+              bulletClass: "reviews__bullet",
+              bulletActiveClass: "reviews__bullet-active",
+            }}
+          >
+            <SwiperSlide>
+              <div className="reviews__item">
+                <Image
+                  onClick={(e) => {
+                    openLink(e);
+                  }}
+                  className="reviews__img"
+                  src={review}
+                  alt="review"
+                  width={400}
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="reviews__item">
+                <Image
+                  className="reviews__img"
+                  src={review_2}
+                  alt="review"
+                  width={400}
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="reviews__item">
+                <Image
+                  className="reviews__img"
+                  src={review_3}
+                  alt="review"
+                  width={400}
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="reviews__item">
+                <Image
+                  className="reviews__img"
+                  src={review_4}
+                  alt="review"
+                  width={400}
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="reviews__item">
+                <Image
+                  className="reviews__img"
+                  src={review_5}
+                  alt="review"
+                  width={400}
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="reviews__item">
+                <Image
+                  className="reviews__img"
+                  src={review_6}
+                  alt="review"
+                  width={400}
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="reviews__item">
+                <Image
+                  className="reviews__img"
+                  src={review_7}
+                  alt="review"
+                  width={400}
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="reviews__item">
+                <Image
+                  className="reviews__img"
+                  src={review_8}
+                  alt="review"
+                  width={400}
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="reviews__item">
+                <Image
+                  className="reviews__img"
+                  src={review_9}
+                  alt="review"
+                  width={400}
+                />
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
