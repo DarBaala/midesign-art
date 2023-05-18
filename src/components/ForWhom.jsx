@@ -7,15 +7,18 @@ const ForWhom = () => {
   return (
     <div className="for-whom">
       <div className="for-whom__wrapper container">
-        <h2>Кому будет полезен курс</h2>
-        <div className="for-whom__bottom">
-          <Image
-            className="for-whom__girl"
-            src={girl}
-            alt="girl"
-            width={453}
-            height={453}
-          />
+        <div className="for-whom__box">
+          <div className="for-whom__left">
+            <h2>Кому будет полезен курс</h2>
+            <Image
+              className="for-whom__girl"
+              src={girl}
+              alt="girl"
+              width={453}
+              height={453}
+            />
+          </div>
+
           <Image
             className="for-whom__flower"
             src={flower}

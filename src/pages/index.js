@@ -5,6 +5,7 @@ import Skills from "@/components/Skills";
 import ForWhom from "@/components/ForWhom";
 import CallReques from "@/components/CallReques";
 import Reviews from "@/components/Reviews";
+import Works from "@/components/Works";
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
       <ForWhom />
       <Reviews />
       {/* <CallReques /> */}
-
+      <Works />
       <div style={{ height: "1000px" }}></div>
     </>
   );
