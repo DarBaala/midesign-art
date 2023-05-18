@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
 
-import { Pagination, Zoom } from "swiper";
+import { Pagination, Zoom, EffectFade, Navigation, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/zoom";
-import "swiper/css/pagination";
+import "swiper/scss";
+import "swiper/scss/zoom";
+import "swiper/scss/pagination";
+import "swiper/scss/effect-fade";
 
 import heart from "../assets/img/heart-icon.svg";
 import review from "../assets/img/reviews-1.png";
@@ -28,15 +29,20 @@ export default function Reviews() {
       </h2>
       <div className="reviews__wrapper">
         <Swiper
-          spaceBetween={50}
-          slidesPerView={2}
           zoom={true}
+          modules={[Zoom, Pagination, EffectFade, Autoplay]}
+          slidesPerView={2}
+          spaceBetween={40}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+          }}
+          effect="Cube"
           pagination={{
             clickable: true,
             bulletClass: "reviews__bullet",
             bulletActiveClass: "reviews__bullet-active",
           }}
-          modules={[Pagination, Zoom]}
         >
           <SwiperSlide>
             <div className="reviews__item">
